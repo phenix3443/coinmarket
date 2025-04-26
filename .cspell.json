@@ -1,0 +1,24 @@
+{
+    "version": "0.2",
+    "language": "en",
+    "words": [
+        "backend",
+        "binance",
+        "hyperliquid",
+        "onchain",
+        "pyproject",
+        "usdc"
+    ],
+    "ignorePaths": [
+        "**/node_modules",
+        "**/dist",
+        "**/.git",
+        "**/*.lock"
+    ],
+    "dictionaries": [
+        "typescript",
+        "node",
+        "softwareTerms"
+    ],
+    "allowCompoundWords": true
+}

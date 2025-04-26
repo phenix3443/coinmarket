@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  coinmarket:
+    build: .
+    container_name: coinmarket
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/logs
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 1m
+      timeout: 10s
+      retries: 3
